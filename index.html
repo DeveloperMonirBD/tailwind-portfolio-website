@@ -4,27 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind Portfolio Project</title>
+  <title>Portfolio Project</title>
+  <!-- Favicons -->
+  <link href="./assets/asset 0.png" rel="icon">
   <!-- main css link  -->
   <link rel="stylesheet" href="output.css">
   <!-- =============================================
-    * Template Name: Tailwind Portfolio 
+    * Template Name: Portfolio Project 
     * Author: Md. Monirul Islam
     * Email: mrmonir0558@gmail.com
-    ---------------------------------------------
+    -----------------------------------------------
     ** Install for node_modules: npm install
     ** Run for build: npm run build
     ** Then, Open With live server.
-    ============================================= -->
+    =============================================== -->
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="p-3 flex bg-white justify-between items-center">
+  <nav class="p-3 flex justify-between items-center bg-white">
+
+    <!-- logo  -->
     <a href="#" id="brand" class="flex items-center gap-2">
       <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="Logo">
       <span class="text-lg font-medium font-display">ToDesktop</span>
     </a>
+
     <!-- Main Nav  -->
     <div id="nav-menu" class="hidden lg:flex gap-12">
       <a href="#" class="font-medium hover:text-primary">Pricing</a>
@@ -33,12 +38,14 @@
       <a href="#" class="font-medium hover:text-primary">Blogs</a>
       <a href="#" class="font-medium hover:text-primary">Login</a>
     </div>
+
     <!-- Electron btn  -->
     <button class="hidden lg:flex gap-2 items-center border border-gray-400 hover:border-gray-500 px-6 py-2 rounded-lg">
       <img src="./assets/asset 1.svg" alt="">
-      <span>Electron Developer</span>
+      <span class="text-lg font-medium font-display">Electron Developer</span>
       <i class="fa-solid fa-arrow-right"></i>
     </button>
+
     <!-- Hamburger btn  -->
     <button class="p-2 lg:hidden" onclick="handleMenu()">
       <i class="fa-solid fa-bars text-gray-600"></i>
@@ -51,11 +58,13 @@
           <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="Logo">
           <span class="text-lg font-medium font-display">ToDesktop</span>
         </a>
+
         <!-- X-Mark btn  -->
         <button class="p-3 gl:hidden" onclick="handleMenu()">
           <i class="fa-solid fa-xmark text-gray-600"></i>
         </button>
       </div>
+
       <!-- X-Mark Nav  -->
       <div class="mt-4">
         <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Pricing</a>
@@ -64,14 +73,15 @@
         <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Blogs</a>
         <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Login</a>
       </div>
+
       <!-- hr-div line -->
       <div class="h-[1px] bg-gray-300"></div>
+
       <!-- Electron btn  -->
       <button class=" w-full m-3 p-3 flex gap-2 items-center hover:bg-gray-50  rounded-lg">
         <img src="./assets/asset 1.svg" alt="">
-        <span>Electron Developer</span>
+        <span class="text-lg font-medium font-display">Electron Developer</span>
       </button>
-
     </div>
   </nav>
 
