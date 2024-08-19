@@ -4,12 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tailwind Portfolio Project</title>
+  <!-- main css link  -->
   <link rel="stylesheet" href="output.css">
 
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline text-red-500">
-    Hello world!
-  </h1>
+  <!-- Navbar -->
+  <nav class="p-3 flex bg-white justify-between items-center">
+    <a href="#" id="brand" class="flex items-center gap-2">
+      <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="Logo">
+      <span class="text-lg font-medium font-display">ToDesktop</span>
+    </a>
+    <!-- Main Nav  -->
+    <div id="nav-menu" class="hidden lg:flex gap-12">
+      <a href="#" class="font-medium hover:text-primary">Pricing</a>
+      <a href="#" class="font-medium hover:text-primary">Docs</a>
+      <a href="#" class="font-medium hover:text-primary">Changelog</a>
+      <a href="#" class="font-medium hover:text-primary">Blogs</a>
+      <a href="#" class="font-medium hover:text-primary">Login</a>
+    </div>
+
+    <!-- Electron btn  -->
+    <button class="hidden lg:flex gap-2 items-center border border-gray-400 hover:border-gray-500 px-6 py-2 rounded-lg">
+      <img src="./assets/asset 1.svg" alt="">
+      <span>Electron Developer</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+    <!-- Hamburger btn  -->
+    <button class="p-2 lg:hidden" onclick="handleMenu()">
+      <i class="fa-solid fa-bars text-gray-600"></i>
+    </button>
+
+    <!-- Nav Dialog  -->
+    <div id="nav-dialog" class="hidden fixed z-10 lg:hidden bg-white inset-0">
+      <div id="nav-bar" class="flex justify-between p-2">
+        <a href="#" id="brand" class="flex items-center gap-2">
+          <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="Logo">
+          <span class="text-lg font-medium font-display">ToDesktop</span>
+        </a>
+        <!-- X-Mark btn  -->
+        <button class="p-3 gl:hidden" onclick="handleMenu()">
+          <i class="fa-solid fa-xmark text-gray-600"></i>
+        </button>
+      </div>
+      <div class="mt-4">
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Pricing</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Docs</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Changelog</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Blogs</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Login</a>
+      </div>
+      <!-- hr line -->
+      <div class="h-[1px] bg-gray-300"></div>
+      <!-- Electron btn  -->
+      <button class=" w-full m-3 p-3 flex gap-2 items-center hover:bg-gray-50  rounded-lg">
+        <img src="./assets/asset 1.svg" alt="">
+        <span>Electron Developer</span>
+      </button>
+
+    </div>
+  </nav>
+  
+
+  
 </body>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/340c0de332.js" crossorigin="anonymous"></script>
+<!-- main script link  -->
+<script src="script.js"></script>
 </html>
