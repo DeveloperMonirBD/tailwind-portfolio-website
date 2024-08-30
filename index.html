@@ -25,7 +25,7 @@
   <nav class="p-3 flex justify-between items-center bg-white">
 
     <!-- logo  -->
-    <a href="#" id="brand" class="flex items-center gap-2">
+    <a href="#" id="brand" class="flex items-center gap-2 flex-1">
       <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="Logo">
       <span class="text-lg font-medium font-display">ToDesktop</span>
     </a>
@@ -40,11 +40,14 @@
     </div>
 
     <!-- Electron btn  -->
-    <button class="hidden lg:flex gap-2 items-center border border-gray-400 hover:border-gray-500 px-6 py-2 rounded-lg">
-      <img src="./assets/asset 1.svg" alt="">
-      <span class="text-lg font-medium font-display">Electron Developer</span>
-      <i class="fa-solid fa-arrow-right"></i>
-    </button>
+    <div class="hidden lg:flex flex-1 justify-end ml-2">
+      <button
+        class="flex gap-2 items-center px-6 py-2 rounded-lg border border-gray-400 hover:border-gray-600">
+        <img src="./assets/asset 1.svg" alt="">
+        <span class="text-lg font-medium font-display">Electron Developer</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
 
     <!-- Hamburger btn  -->
     <button class="p-2 lg:hidden" onclick="handleMenu()">
@@ -84,6 +87,61 @@
       </button>
     </div>
   </nav>
+
+  <!-- Main  -->
+  <main>
+    <!-- Hero section  -->
+    <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+      <div id="hero-container" class="max-w-4xl mx-auto px-6 pb-32 flex flex-col sm:items-center sm:text-center sm:pt-12">
+        <!-- Find-in-page  -->
+        <div id="version-text"
+          class="flex items-center my-8 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-300 group">
+          <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
+          <p class="font-display font-medium text-yellow-600">v0.21.1: <span class="text-yellow-800">Find-in-page
+              fixes</span></p>
+          <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+        </div>
+
+        <!-- hero-features  -->
+        <div id="hero-features" class="hidden sm:flex gap-8 my-6">
+          <!-- 1st code  -->
+           <div class="flex justify-center items-center gap-2 text-gray-500">
+            <i class="fa-regular fa-file-code text-sm"></i>
+            <p>Code Optional</p>
+           </div>
+
+          <!-- 2nd code  -->
+           <div class="flex justify-center items-center gap-2 text-gray-500">
+            <i class="fa-solid fa-hand-back-fist text-sm"></i>
+            <p>Drag & drop builder</p>
+           </div>
+
+          <!-- 3rd code  -->
+           <div class="flex justify-center items-center gap-2 text-gray-500">
+            <i class="fa-solid fa-laptop text-sm"></i>
+            <p>Windows, Mac, Linux</p>
+           </div>
+        </div>
+
+        <!-- hero-content  -->
+        <h1 class="text-4xl sm:text-6xl font-semibold leading-snug sm:leading-normal">Web app to desktop app in minutes
+        </h1>
+        <p class="text-xl sm:text-2xl mt-4 sm:mt-8 text-gray-800">Take your web app codebase and transform it into a
+          cross platform desktop app with native functionality.</p>
+        <!-- hero-btn  -->
+        <div id="buttons-container" class="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-6">
+          <!-- 1st btn  -->
+          <button
+            class="px-8 py-3 font-semibold text-white bg-primary rounded-md shadow-sm hover:bg-opacity-90 transition duration-300">Download
+            now</button>
+          <!-- 2nd btn  -->
+          <button
+            class="px-8 py-3 font-semibold text-gray-800 border border-gray-400 rounded-md shadow-sm hover:border-gray-800 transition duration-300">Read
+            Docs</button>
+        </div>
+      </div>
+    </div>
+  </main>
 
 
 
